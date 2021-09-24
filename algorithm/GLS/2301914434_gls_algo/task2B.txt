@@ -1,0 +1,27 @@
+// English
+To get an algorithm that is able to search data with O(1) we will require a Hash Table.
+A Hash Table is just an array of linked list that has a Hash Function.
+A Hash Function is a function which processes data and returns an integer.
+To insert a data into the Hash Table, the Hash Function will firstly process the data to return an integer that will denote the index of the data in the array.
+This does not happen in normal arrays which usually insert data in order from index 0 to n.
+Because of this if we want to look up the data using a key, the key can be processed through the same Hash Function and will return the same integer or index of the data being searched in the array.
+This way, we do not have to iterate through the whole array to find our data but instead pinpoint directly the index of our searched data.
+We will take the data id = 1002 from the customer database as an example
+When 1002 is inserted to the hash table through the Hash Function, has the index of 8.
+When we look up for id = 1002, 1002 will be processed through the same Hash Function and will immediately return to us the index 8.
+Then we access index 8 to find our searched data.
+Through this process, we are able to find our data immediately in constant time, or O(1).
+
+// Bahasa Indonesia
+Untuk mendapatkan algoritma yang dapat mencari data dengan O (1) kita akan membutuhkan Tabel Hash.
+Tabel Hash hanyalah array linked list yang memiliki Fungsi Hash.
+Fungsi Hash adalah fungsi yang memproses akan data dan mengembalikan integer.
+Untuk menyisipkan data ke dalam Tabel Hash, Fungsi Hash pertama-tama akan memproses data untuk mengembalikan integer yang menunjukkan indeks data dalam array.
+Ini tidak terjadi dalam array normal yang biasanya memasukkan data secara berurutan dari indeks 0 ke n.
+Karena itu jika kita ingin mencari data menggunakan kunci, kunci tersebut dapat diproses melalui Fungsi Hash yang sama dan akan mengembalikan integer atau indeks data yang sama yang sedang dicari dalam array.
+Dengan cara ini, kita tidak perlu mengulangi seluruh array untuk menemukan data kita, tetapi langsung menentukan indeks dari data yang kita cari.
+Sebagai contoh kita ambil satu data, id = 1002, dari database customer.
+Ketika 1002 dimasukkan ke tabel hash melalui Fungsi Hash, memiliki indeks 8.
+Ketika kita mencari id = 1002, 1002 akan diproses melalui Fungsi Hash yang sama dan akan segera kembali kepada kita indeks 8.
+Kemudian kita mengakses indeks 8 untuk menemukan data yang dicari.
+Melalui proses ini, kami dapat menemukan data kami segera dalam waktu yang konstan, atau O (1).

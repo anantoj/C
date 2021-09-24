@@ -1,0 +1,21 @@
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Date: 01/01/20 Time: 22:32 Location: Raffles Hotel
+--- 8.8.8.8 ping statistics ---
+4351 packets recived, 4335 packets received, 0.4% packet loss
+round-trip min/avg/max = 16.430/22.344/374.691 ms
+LOSS: Good 
+PING: Good
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Date: 03/01/20 Time: 03:00 Location: House
+--- 8.8.8.8 ping statistics ---
+8454 packets recived, 8447 packets received, 0.1% packet loss
+round-trip min/avg/max = 18.794/26.427/337.989 ms
+LOSS: Good 
+PING: Good
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Date: 05/01/20 Time: 22:34 Location: Apartment
+--- 8.8.8.8 ping statistics ---
+1356 packets recived, 1207 packets received, 11.0% packet loss
+round-trip min/avg/max = 14.154/22.341/1822.219 ms
+LOSS: Bad 
+PING: Good

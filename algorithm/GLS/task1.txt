@@ -1,0 +1,43 @@
+credit_simulation
+    intitialize_variables
+    get price
+    get number_of_months
+    calculate_DP_base(price,DP_base)
+    calculate_insurance(price, insurance)
+    calculate_administration(price, administration)
+    calculate_installment(price,number_of_months,installment,residue)
+    DP = DP_base + insurance + administration + residue
+    installment = installment - residue
+    print DP, installment
+END
+
+intitialize_variables
+    set price to zero
+    set number_of_months to zero
+    set insurance to zero
+    set administration to zero
+    set installment to zero
+    set residue to zero
+END
+
+calculate_DP_base(price, DP_base)
+    DP_base = 12.5 / 100 * price
+END
+
+calculate_insurance(price, insurance)
+    IF price > 1 000 000 THEN
+        insurance = 0.25 / 100 * price
+    ENDIF
+END
+
+calculate_administration(price, insurance, administration)
+    administration = 5 / 100 * (price + insurance)
+END
+
+calculate_installment(price,number_of_months,installment,residue) 
+    installment = 87.5 / 100 * (price / number_of_months)
+    IF installment % 1 != 0 THEN
+        residue = installment % 1
+        residue = residue * number_of_months
+    ENDIF
+END

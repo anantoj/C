@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "stdlib.h": "c",
+        "__node_handle": "c",
+        "string": "c"
+    }
+}
